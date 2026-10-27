@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>2次会決めツール</title>
+    <!-- .cssはHTMLの中身が読み込まれる前に書いておく。CSS読み込む -->
+    <link rel="stylesheet" href="style.css"/>
+
+  </head>
+
+  <body>
+  <!--bodyは見た目を指定する -->
+  <div class="title-area">
+    <h1>🍻🍖2次会どうする？🍗🍻</h1>
+    <!-- <p>気になる店・候補があれば入力してください</p> -->
+  <p class="catch-copy">
+    \サクッと1秒で決めちゃお/
+  </p>
+  </div>
+
+  <!-- 2次会候補を入力するフォーム -->
+   <p class="form-message">
+    気になる店・候補があれば入力してください
+   </p>
+  <form id="choice-form">
+    <input 
+      id="choice-input" type="text" placeholder="例：ちばチャン🍺">
+    <button type="submit">候補を追加</button>
+  </form>
+
+<h2>今日の候補</h2>
+<!-- 追加された候補を表示する場所 -->
+  <div id ="choice-list"></div>
+
+  <!-- ランダムに一つ選ぶボタン -->
+    <button id ="random-button" type = "button">
+      🎲2次会を決める🎲</button>
+
+    <h2>今日の2次会は...</h2>
+
+    <!-- 選ばれた結果を表示する場所 -->
+     <div id="result"></div>
+     <!-- javascriptを最後に読み込む -->
+    <script src="app.js"></script>
+  </body>
+
+</html>
